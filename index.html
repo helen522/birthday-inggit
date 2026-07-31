@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Inggit ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Poppins,sans-serif;
+  color:#fff;
+  background:linear-gradient(135deg,#170b1f,#35132d 45%,#180b22);
+  overflow-x:hidden;
+}
+#opening{
+  position:fixed;inset:0;z-index:100;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  background:radial-gradient(circle at 50% 40%,#5b2455,#180b22 70%);
+  transition:opacity 1s,visibility 1s;
+}
+#opening.hide{opacity:0;visibility:hidden}
+.open-card{padding:30px;max-width:700px}
+.sparkle{font-size:42px;animation:pulse 1.5s infinite}
+.open-card h1{font-family:"DM Serif Display";font-size:clamp(42px,8vw,82px);margin:10px 0}
+.open-card p{opacity:.85;margin-bottom:25px}
+.btn{
+  border:0;border-radius:999px;padding:14px 28px;cursor:pointer;
+  font:600 15px Poppins;color:#35132d;background:#ffd8ea;
+  box-shadow:0 10px 30px #0005;transition:.25s;
+}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px;position:relative}
+.hero-inner{position:relative;z-index:2}
+.badge{display:inline-block;padding:8px 15px;border:1px solid #fff5;border-radius:999px;background:#fff1;backdrop-filter:blur(8px)}
+h1,h2{font-family:"DM Serif Display",serif}
+.hero h1{font-size:clamp(52px,11vw,115px);line-height:.95;margin:18px 0}
+.hero h1 span{display:block;color:#ffd0e4}
+.hero p{max-width:650px;margin:auto;line-height:1.8;color:#f5dfea}
+.photo-main{
+  width:min(330px,75vw);height:420px;object-fit:cover;border-radius:180px 180px 25px 25px;
+  margin:35px auto 0;display:block;border:5px solid #ffffff30;
+  box-shadow:0 25px 80px #0008;animation:float 4s ease-in-out infinite;
+}
+section{padding:90px 20px;position:relative}
+.container{max-width:1050px;margin:auto}
+.title{text-align:center;margin-bottom:45px}
+.title h2{font-size:clamp(38px,6vw,62px)}
+.title p{color:#edcddd;margin-top:10px}
+.message{
+  max-width:800px;margin:auto;text-align:center;padding:38px 28px;
+  border:1px solid #fff2;border-radius:28px;background:#ffffff0d;backdrop-filter:blur(12px);
+  box-shadow:0 20px 60px #0004;line-height:2;
+}
+.message strong{color:#ffd0e4}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gallery figure{overflow:hidden;border-radius:25px;background:#fff1;border:1px solid #fff2}
+.gallery img{width:100%;height:430px;object-fit:cover;display:block;transition:.6s}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery figcaption{text-align:center;padding:12px;color:#f4d8e6}
+.cake-wrap{text-align:center}
+.cake{
+  position:relative;width:190px;height:110px;margin:45px auto 30px;
+  background:linear-gradient(#f5a6c6,#e875a5);border-radius:15px 15px 25px 25px;
+  box-shadow:0 20px 50px #0005;
+}
+.cake:before{content:"";position:absolute;left:0;right:0;top:25px;height:18px;background:#fff1f7;border-radius:50%}
+.cake:after{content:"";position:absolute;left:20px;right:20px;top:-5px;height:35px;border-radius:50%;background:#ffd7e7}
+.candle{position:absolute;width:10px;height:55px;background:#fff;left:90px;top:-55px;border-radius:5px}
+.flame{position:absolute;width:18px;height:26px;background:#ffd166;border-radius:50% 50% 50% 50%;top:-26px;left:-4px;animation:flicker .45s infinite alternate}
+.final{text-align:center;min-height:70vh;display:flex;align-items:center}
+.final h2{font-size:clamp(45px,8vw,85px);color:#ffd0e4}
+.final p{max-width:650px;margin:20px auto;line-height:2;color:#f5dfea}
+.footer{padding:25px;text-align:center;color:#cfaabb;font-size:13px}
+.heart{position:fixed;bottom:-30px;font-size:20px;pointer-events:none;z-index:1;animation:rise linear forwards}
+.balloon{position:fixed;bottom:-100px;font-size:50px;pointer-events:none;z-index:1;animation:balloon 10s linear forwards}
+.confetti{position:fixed;top:-20px;width:9px;height:16px;z-index:200;pointer-events:none;animation:confetti 3s linear forwards}
+.reveal{opacity:0;transform:translateY(30px);transition:1s}
+.reveal.show{opacity:1;transform:none}
+@keyframes pulse{50%{transform:scale(1.15)}}
+@keyframes float{50%{transform:translateY(-12px)}}
+@keyframes flicker{to{transform:scale(1.15) rotate(3deg);opacity:.8}}
+@keyframes rise{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@keyframes balloon{to{transform:translateY(-120vh);opacity:0}}
+@keyframes confetti{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(max-width:750px){
+ .gallery{grid-template-columns:1fr}
+ .gallery img{height:500px}
+ .photo-main{height:390px}
+}
+</style>
+</head>
+<body>
+
+<div id="opening">
+  <div class="open-card">
+    <div class="sparkle">✨</div>
+    <h1>For Inggit</h1>
+    <p>Ada kejutan kecil yang dibuat khusus untuk kamu... ❤️</p>
+    <button class="btn" onclick="openSurprise()">💌 Buka Kejutan</button>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <span class="badge">🎂 A Special Day For Someone Special</span>
+    <h1>Happy Birthday<br><span>Inggit Setia Ningrum</span></h1>
+    <p>Hari ini bukan sekadar bertambahnya usia, tapi juga bertambahnya cerita, harapan, dan alasan untuk tersenyum. ✨</p>
+    <img class="photo-main" src="images/inggit1.jpg" alt="Inggit">
+  </div>
+</section>
+
+<section>
+ <div class="container reveal">
+  <div class="title"><h2>Untuk Kamu ❤️</h2><p>Sebuah pesan kecil yang semoga bisa membuatmu tersenyum.</p></div>
+  <div class="message">
+   <p>Selamat ulang tahun, <strong>Inggit Setia Ningrum</strong>! 🎉</p>
+   <p>Semoga di usia yang baru ini, setiap langkahmu dipenuhi hal-hal baik.
+   Semoga apa yang kamu semogakan perlahan menjadi kenyataan, yang kamu perjuangkan menemukan jalannya,
+   dan yang kamu impikan suatu hari bisa kamu genggam.</p>
+   <p>Jangan lupa untuk selalu tersenyum, menikmati setiap proses, dan menjadi versi terbaik dari dirimu sendiri. 🌷</p>
+   <p>Semoga hari ini menjadi salah satu hari yang paling manis untukmu. ❤️</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container reveal">
+  <div class="title"><h2>Little Memories 📸</h2><p>Tiga foto, tiga senyum, satu ucapan yang sama: semoga kamu selalu bahagia.</p></div>
+  <div class="gallery">
+   <figure><img src="images/inggit1.jpg" alt="Inggit 1"><figcaption>✨ Senyum yang indah</figcaption></figure>
+   <figure><img src="images/inggit2.jpg" alt="Inggit 2"><figcaption>🌷 Tetap jadi dirimu</figcaption></figure>
+   <figure><img src="images/inggit3.jpg" alt="Inggit 3"><figcaption>💖 Keep smiling</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container reveal cake-wrap">
+  <div class="title"><h2>Make A Wish 🎂</h2><p>Pejamkan mata sebentar... buat satu harapan.</p></div>
+  <div class="cake"><div class="candle"><div class="flame"></div></div></div>
+  <button class="btn" onclick="wish()">✨ Aku Sudah Membuat Harapan</button>
+ </div>
+</section>
+
+<section class="final">
+ <div class="container reveal">
+  <div class="title"><p>And once again...</p><h2>Happy Birthday,<br>Inggit ❤️</h2></div>
+  <p>Semoga tahun ini membawa lebih banyak kebahagiaan, kejutan baik, orang-orang baik,
+  dan momen yang layak untuk dikenang.</p>
+  <button class="btn" onclick="celebrate()">🎉 Rayakan Lagi!</button>
+ </div>
+</section>
+</main>
+
+<div class="footer">Made with ❤️ specially for Inggit Setia Ningrum</div>
+
+<script>
+function openSurprise(){
+ document.getElementById('opening').classList.add('hide');
+ celebrate();
+ setTimeout(()=>document.querySelectorAll('.reveal').forEach(x=>x.classList.add('show')),700);
+}
+function celebrate(){
+ for(let i=0;i<90;i++){
+  const c=document.createElement('div');c.className='confetti';
+  c.style.left=Math.random()*100+'vw';
+  c.style.animationDelay=Math.random()*1.2+'s';
+  c.style.transform=`rotate(${Math.random()*360}deg)`;
+  document.body.appendChild(c);
+  setTimeout(()=>c.remove(),4500);
+ }
+ for(let i=0;i<12;i++){
+  const b=document.createElement('div');b.className='balloon';
+  b.textContent=['🎈','🎈','💗'][Math.floor(Math.random()*3)];
+  b.style.left=Math.random()*100+'vw';
+  b.style.animationDelay=Math.random()*3+'s';
+  document.body.appendChild(b);
+  setTimeout(()=>b.remove(),13000);
+ }
+}
+function wish(){
+ alert('✨ Semoga harapan Inggit dikabulkan dan semua hal baik segera datang. Aamiin ❤️');
+ celebrate();
+}
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
+</script>
+</body>
+</html>
